@@ -1,2 +1,2 @@
-# goit-markup-hw-02_edited
- homework#2_update
+# goit-markup-hw-03_edited
+ homework#3_update
