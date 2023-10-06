@@ -34,14 +34,11 @@ body {
 
 .footer {
   background-color: var(--navy_blue);
+  width: 1440px;
+  height: 312px;
+  box-sizing: border-box;
+  padding: 100px 1020px 100px 156px;
 }
-
-.footer-text {
-  color: var(--cloud);
-  line-height: 1.5;
-}
-/* line-height conversion
- 1 = 16px */
 
 .link-web {
   font-size: 18px;
@@ -59,6 +56,13 @@ body {
   color: var(--cloud);
 }
 
+.footer-text {
+  color: var(--cloud);
+  line-height: 1.5;
+}
+/* line-height conversion
+ 1 = 16px */
+
 /* change color when pointed by cursor */
 .link-web:hover .link-spanweb,
 .link-web:focus .link-spanweb,
@@ -66,7 +70,7 @@ body {
 .link-web:focus .link-spanstudio {
   color: var(--ocean);
 }
-/* end of footer sectionhe */
+/* end of footer section */
 
 /* header section */
 .header {
@@ -111,12 +115,12 @@ body {
 /* end of header style */
 
 /* body styling */
-.main-title-section {
+.hero {
   background-color: var(--navy_blue);
   margin-top: 50px;
 }
 
-.main-title {
+.hero-title {
   text-align: center;
   color: var(--white);
   font-size: 56px;
@@ -145,4 +149,88 @@ body {
 /* end of button style */
 .title {
   text-align: center;
+}
+
+/* adding box & flex */
+
+/* our team style */
+
+/* team section */
+
+.title {
+  display: block; /*allow to center the title*/
+}
+.team-section {
+  box-sizing: border-box;
+  background-color: var(--cloud);
+  width: 1440px;
+  height: 732px;
+  align-content: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 120px 156px;
+}
+
+.link {
+  display: inline-flex;
+}
+
+.team-section .link {
+  background-color: var(--white);
+  height: 380px;
+  width: 264px;
+  margin: 4px;
+}
+
+.team-link-list {
+  text-align: center;
+}
+
+/* Doing section style */
+
+.policy-section {
+  box-sizing: border-box;
+  background-color: var(--white);
+  width: 1128px;
+  height: 104px;
+  flex-shrink: 0;
+  margin: 120px 156px;
+}
+
+.doing-section {
+  box-sizing: border-box;
+  background-color: var(--white);
+  width: 1128px;
+  height: 412px;
+  flex-shrink: 0;
+  margin: 120px 156px;
+}
+
+.team-section .title,
+.doing-section .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.policy-list {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.4px;
+}
+
+/* hero styling */
+
+.hero {
+  box-sizing: border-box;
+  width: 1440px;
+  height: 600px;
+}
+
+.main-btn {
+  align-content: center;
 }
