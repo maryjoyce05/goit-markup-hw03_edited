@@ -11,6 +11,14 @@
 
 /*main style*/
 
+body {
+  font-family: roboto;
+  color: var(--slate);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .link {
   list-style-type: none; /*remove bullet point to all list class*/
   color: var(--slate);
@@ -20,14 +28,6 @@
 .link-list,
 .link-web {
   text-decoration: none; /*remove underlines*/
-}
-
-body {
-  font-family: roboto;
-  color: var(--slate);
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /* footer section */
@@ -97,27 +97,25 @@ body {
   font-style: normal;
 }
 
-/* change color when pointed by cursor */
 .link-list:hover,
 .link-list:focus,
 .link-web:hover .header-web,
 .link-web:focus .header-web,
 .link-web:focus .header-studio,
 .link-web:hover .header-studio {
-  color: var(--ocean);
+  color: var(--ocean); /* change color when pointed by cursor */
   cursor: pointer;
 }
 
-/* removing spaces between contact */
 .header .link {
-  margin: 0;
+  margin: 0; /* removing spaces between contact */
 }
+
 /* end of header style */
 
-/* body styling */
+/* Hero styling */
 .hero {
   background-color: var(--navy_blue);
-  margin-top: 50px;
 }
 
 .hero-title {
@@ -125,14 +123,21 @@ body {
   color: var(--white);
   font-size: 56px;
   font-weight: 700;
-  line-height: 107.43%.;
+  line-height: 107.43%;
   letter-spacing: 1.12px;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
+  margin: auto;
+  padding: 188px 472px 48px;
 }
-/* button style */
+
+.hero {
+  width: 1440px;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+/* button style section*/
 .main-btn {
+  box-sizing: border-box;
   color: var(--white);
   background: var(--iris);
   border-radius: 4px;
@@ -140,26 +145,30 @@ body {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  margin: auto;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--ocean);
 }
-
 /* end of button style */
-.title {
-  text-align: center;
-}
 
-/* adding box & flex */
-
-/* our team style */
-
-/* team section */
+/* team style section */
 
 .title {
   display: block; /*allow to center the title*/
+  text-align: center;
 }
+.team-link-list {
+  text-align: center;
+}
+
 .team-section {
   box-sizing: border-box;
   background-color: var(--cloud);
@@ -181,30 +190,53 @@ body {
   height: 380px;
   width: 264px;
   margin: 4px;
+  border-bottom-left-radius: 4px; /* to add radius to the bottom border */
+  border-bottom-right-radius: 4px; /* to add radius to the bottom border */
 }
 
-.team-link-list {
-  text-align: center;
+.team-section .title {
+  padding-bottom: 36px;
 }
 
-/* Doing section style */
+.team-name {
+  gap: 8px;
+}
+/* Policy Style Section */
 
 .policy-section {
+  display: inline-flex;
   box-sizing: border-box;
   background-color: var(--white);
   width: 1128px;
   height: 104px;
-  flex-shrink: 0;
-  margin: 120px 156px;
+  margin: 120px 156px 60px;
+  align-items: center;
+  justify-content: center;
 }
 
+.policy-list {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.4px;
+}
+
+.policy-section .link {
+  gap: 24px; /*to add gap between class policy-list*/
+  display: inline-flex;
+  justify-content: center;
+}
+
+/* Doing style section */
 .doing-section {
+  display: block;
   box-sizing: border-box;
   background-color: var(--white);
   width: 1128px;
   height: 412px;
-  flex-shrink: 0;
-  margin: 120px 156px;
+  margin: 60px 156px 120px;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-section .title,
@@ -216,21 +248,39 @@ body {
   text-transform: capitalize;
 }
 
-.policy-list {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.4px;
-}
+/* headings style section*/
 
-/* hero styling */
-
-.hero {
+.header {
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1440px;
-  height: 600px;
+  height: 72px;
+  padding: 24px 156px;
 }
 
-.main-btn {
-  align-content: center;
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .link {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header .link-list {
+  margin-right: 10 px;
+}
+
+.header .link-list:last-child {
+  margin-right: 0;
+  margin-left: 20px; /* to add space between class link-list*/
+}
+
+.header-nav .link-web {
+  margin-right: 20px;
 }
