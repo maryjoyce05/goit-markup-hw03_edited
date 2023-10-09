@@ -116,10 +116,18 @@ body {
 /* Hero styling */
 .hero {
   background-color: var(--navy_blue);
+  width: 1440px;
+  height: 600px;
+  box-sizing: border-box;
+  display: flex-block;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  flex-direction: column;
 }
 
 .hero-title {
-  text-align: center;
   color: var(--white);
   font-size: 56px;
   font-weight: 700;
@@ -129,28 +137,21 @@ body {
   padding: 188px 472px 48px;
 }
 
-.hero {
-  width: 1440px;
-  height: 600px;
-  box-sizing: border-box;
-}
-
 /* button style section*/
 .main-btn {
   box-sizing: border-box;
   color: var(--white);
   background: var(--iris);
   border-radius: 4px;
+  border: 4px;
   border-color: none;
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  display: block;
-  margin: auto;
+  margin: 0;
   padding: 16px 32px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .main-btn:hover,
@@ -162,7 +163,6 @@ body {
 /* team style section */
 
 .title {
-  display: block; /*allow to center the title*/
   text-align: center;
 }
 .team-link-list {
@@ -223,8 +223,6 @@ body {
 
 .policy-section .link {
   gap: 24px; /*to add gap between class policy-list*/
-  display: inline-flex;
-  justify-content: center;
 }
 
 /* Doing style section */
@@ -237,6 +235,12 @@ body {
   margin: 60px 156px 120px;
   align-items: center;
   justify-content: center;
+}
+
+.doing-section .link {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .team-section .title,
